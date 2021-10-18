@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using traffic_light.Hubs;
+using traffic_light.StateMachines;
 
 namespace traffic_light
 {
@@ -28,6 +30,12 @@ namespace traffic_light
             {
                 configuration.RootPath = "ClientApp/build";
             });
+
+            services.AddSingleton<DateTimeProvider>();
+            services.AddSingleton<ITrafficStateMachine,TrafficStateMachine>();
+
+            services.AddHostedService<BackgroundTrafficLight>();
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,6 +63,8 @@ namespace traffic_light
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
+
+                endpoints.MapHub<TrafficHub>("/hubs/traffic");
             });
 
             app.UseSpa(spa =>

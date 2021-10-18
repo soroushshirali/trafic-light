@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "traffic-light", "traffic-light.csproj", "{1B1A60BC-6022-41B7-B68B-52DF3810B2D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "traffic-light", "traffic-light.csproj", "{1B1A60BC-6022-41B7-B68B-52DF3810B2D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "traffic-light-tests", "traffic-light-tests\traffic-light-tests.csproj", "{64B5B340-F6F8-44E1-8031-2956F5052252}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,9 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1B1A60BC-6022-41B7-B68B-52DF3810B2D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +29,23 @@ Global
 		{1B1A60BC-6022-41B7-B68B-52DF3810B2D4}.Release|x64.Build.0 = Release|Any CPU
 		{1B1A60BC-6022-41B7-B68B-52DF3810B2D4}.Release|x86.ActiveCfg = Release|Any CPU
 		{1B1A60BC-6022-41B7-B68B-52DF3810B2D4}.Release|x86.Build.0 = Release|Any CPU
+		{64B5B340-F6F8-44E1-8031-2956F5052252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B5B340-F6F8-44E1-8031-2956F5052252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B5B340-F6F8-44E1-8031-2956F5052252}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{64B5B340-F6F8-44E1-8031-2956F5052252}.Debug|x64.Build.0 = Debug|Any CPU
+		{64B5B340-F6F8-44E1-8031-2956F5052252}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{64B5B340-F6F8-44E1-8031-2956F5052252}.Debug|x86.Build.0 = Debug|Any CPU
+		{64B5B340-F6F8-44E1-8031-2956F5052252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B5B340-F6F8-44E1-8031-2956F5052252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64B5B340-F6F8-44E1-8031-2956F5052252}.Release|x64.ActiveCfg = Release|Any CPU
+		{64B5B340-F6F8-44E1-8031-2956F5052252}.Release|x64.Build.0 = Release|Any CPU
+		{64B5B340-F6F8-44E1-8031-2956F5052252}.Release|x86.ActiveCfg = Release|Any CPU
+		{64B5B340-F6F8-44E1-8031-2956F5052252}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10E8F2D7-BC57-4F8D-81E9-C8A7EB1A2F44}
 	EndGlobalSection
 EndGlobal
